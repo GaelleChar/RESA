@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <link rel="stylesheet" type="text/css" href="Money.css">
+    </head>
+    <body>
+        <section id="Collect-info">
+            <div>
+                <h1> Hey! what's your name?</h1>
+                <!-- change from 'button' to 'enter'-->
+                <div class="button">
+                    <!--TODO: "Enter name" inside of input, low opacity-->
+                    <input name="name" id="name-input" type="text"> </input>
+                    <button type="submit" id="number"> Enter </button>
+                    <p id="answer"></p>
+                    <div id="bot-intro" class="inactive">
+                        <p id="hidden" class="textContent"></p>
+                        <p> My name is [app name],
+                        I'm here to help you with your finances ^_^</p></br>
+                        <h2>Have you been spending too much? :(</h2>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+        <script src="Money.js"></script>
+        <script src="MoneyParallax.js"></script>
+    </body>
+</html>
