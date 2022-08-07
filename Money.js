@@ -22,8 +22,7 @@
 //Hey [name], My name is [app name] I'm here to help you with your finances ^_^
 //Have u been spending too much ;>)
 //How old are you?
-let $ = selector => document.querySelector(selector);
-let $$ = selector => document.querySelectorAll(selector);
+
 const numbers = ['0','1','2','3','4','5','6','7','8','9'];
 let [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z] 
 = Array.from({
@@ -38,7 +37,6 @@ class Money{
 }
 function main(){
 }
-    const btn = $(`button`);
     const txt = document.getElementById(`hidden`);
     const bot_intro = document.getElementById(`bot-intro`);
     //bot_intro.style.display = 'none';
@@ -96,16 +94,17 @@ function main(){
             swap(user_name_string, i + 1, high)
             return (i + 1);
         }
+        /*
 
         function printMessage(user_name_string){
-            /*
+            //
             right now its going
             'g' 'a' 'e'
              'a' = name[1]
             name[1] = num[0]
             name[1] = num[1]
             name[1] = num[2] THEN IT GOES YES!
-            */
+            //
             var i = 0
             for (i = 0; user_name_string[0] >= numbers[i]; i++){
                 if(user_name_string[0] == numbers[i] || user_name_string[i] == null){
@@ -124,11 +123,11 @@ function main(){
                     setTimeout(botMessage, 10);
                 }
             //check:
-            window.alert(user_name_string[0])
-            window.alert(numbers[i])
+            //window.alert(user_name_string[0])
+            //window.alert(numbers[i])
             }
         }
-
+        */
         //return an array from a string
         stringToArray(user_name, user_name_string);
         
@@ -138,7 +137,7 @@ function main(){
         var high = n-1;
 
         quick_sort_name(user_name_string, low, high);
-        printMessage(user_name_string);
+        //printMessage(user_name_string);
 
 
     });
